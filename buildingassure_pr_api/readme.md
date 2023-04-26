@@ -1,0 +1,11 @@
+# Building Assure Paragon Robotics API
+
+Make sure to install modules by typing into the terminal "npm install".
+
+The only important file is "PR_fetchAllSensors.js". Currently, the file grabs all data from all the sensors at the Building Assure Chandler Arizona location and will console log the data.
+
+The next step would be to take that data and put it into the correct database in Azure at specifc time intervals. The database being: "CGPdb (coolgreenpowerdbs/CGPdb)" in the Resource Group "CGPParagonData". I think when it comes to this, there are two options. One option is to use JavaScript's "setInterval" function, and the other option is to use Microsoft Azure functions with a time trigger. I believe that the Microsoft Azure functions with a time trigger would be the better option because azure functions are serverless so a computer wouldn't need to be ran in the background for it to do its tasks whereas the "setInterval" function option would. I think when expanding to live locations, we should create separate azure functions for each separate location, but I am not too sure on this.
+
+I don't personally know how Microsoft Azure functions with a time trigger work specifically so I would look up documentation or online youtube videos. A link to Microsoft's official documentation is also provided: https://learn.microsoft.com/en-us/azure/azure-functions/functions-bindings-timer?tabs=in-process&pivots=programming-language-javascript The previous intern before me used JavaScript's "setInterval" function with an interval of 10 seconds to insert [datetime, humidity] data for a single sensor from the Building Assure Chandler Arizona location. That functionality can be found in "execute.js" file in the "Fetch-Paragon-Data-main" folder.
+
+Lastly, I would say that Paragon Robotics' API is a little difficult to work with. For example, realistically, we would want to use Paragon Robotics' "haloS.getDeviceListSensors(callback)" function, but I wasn't able to figure it out so I just decided to create a JSON object containing the sensors and the paths. In addition, I had some other problems elsewhere which was solved by Paragon Robotics after we wrote a support ticket to them. So if you ever get stuck with Paragon Robotics, I would first discuss with Gordon and he can write the support ticket, or you can try writing it yourself.

@@ -1,0 +1,11 @@
+{
+    "dependencies": {
+        "axios": "^0.27.2",
+        "dotenv": "^16.0.3",
+        "jsonwebtoken": "^8.5.1",
+        "node-fetch": "^2.6.7",
+        "tedious": "^15.1.0",
+        "express": "^4.17.3",
+        "eventsource": "^1.1.1"
+    }
+}

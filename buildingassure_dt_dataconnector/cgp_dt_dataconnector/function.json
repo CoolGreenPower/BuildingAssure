@@ -1,0 +1,64 @@
+{
+  "bindings": [
+    {
+      "authLevel": "anonymous",
+      "type": "httpTrigger",
+      "direction": "in",
+      "name": "req",
+      "methods": [
+        "get",
+        "post"
+      ]
+    },
+    {
+      "type": "http",
+      "direction": "out",
+      "name": "res"
+    },
+    {
+      "type": "cosmosDB",
+      "direction": "out",
+      "name": "ChandlerDevCenterFrontDoor",
+      "databaseName": "ChandlerDevCenter",
+      "collectionName": "FrontDoor",
+      "createIfNotExists": false,
+      "connectionStringSetting": "CosmosDbConnectionString"
+    },
+    {
+      "type": "cosmosDB",
+      "direction": "out",
+      "name": "ChandlerDevCenterMasterBedTempAndHumid",
+      "databaseName": "ChandlerDevCenter",
+      "collectionName": "MasterBedTempAndHumid",
+      "createIfNotExists": false,
+      "connectionStringSetting": "CosmosDbConnectionString"
+    },
+    {
+      "type": "cosmosDB",
+      "direction": "out",
+      "name": "ChandlerDevCenterOfficeTemp",
+      "databaseName": "ChandlerDevCenter",
+      "collectionName": "OfficeTemp",
+      "createIfNotExists": false,
+      "connectionStringSetting": "CosmosDbConnectionString"
+    },
+    {
+      "type": "cosmosDB",
+      "direction": "out",
+      "name": "ChandlerDevCenterTouchSensor",
+      "databaseName": "ChandlerDevCenter",
+      "collectionName": "TouchSensor",
+      "createIfNotExists": false,
+      "connectionStringSetting": "CosmosDbConnectionString"
+    },
+    {
+      "type": "cosmosDB",
+      "direction": "out",
+      "name": "ChandlerDevCenterWaterSensor",
+      "databaseName": "ChandlerDevCenter",
+      "collectionName": "WaterSensor",
+      "createIfNotExists": false,
+      "connectionStringSetting": "CosmosDbConnectionString"
+    }
+  ]
+}

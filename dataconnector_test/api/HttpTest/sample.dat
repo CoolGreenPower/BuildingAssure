@@ -1,0 +1,57 @@
+{
+    "event": {
+        "eventId": "cee98eaibs2758rvhl70",
+        "targetName": "projects/cbatk6b9ub8ophfojf9g/devices/btov79dpna500081h9o0",
+        "eventType": "humidity",
+        "data": {
+            "humidity": {
+                "temperature": 21.92,
+                "relativeHumidity": 42,
+                "updateTime": "2022-12-16T16:48:56.809Z"
+            }
+        },
+        "timestamp": "2100-12-12T01:00:01.123Z"
+    },
+    "labels": {
+        "name": "Master Bed Temp And Humid"
+    },
+    "metadata": {
+        "deviceId": "btov79dpna500081h9o0",
+        "projectId": "cbatk6b9ub8ophfojf9g",
+        "deviceType": "humidity",
+        "productNumber": "102096"
+    }
+}
+
+{
+    "event": {
+        "eventId": "cee98eaibs2758rvhl70",
+        "targetName": "projects/cbatk6b9ub8ophfojf9g/devices/btov79dpna500081h9o0",
+        "eventType": "networkStatus",
+        "data": {
+            "networkStatus": {
+                "signalStrength": 38,
+                "rssi": -87,
+                "updateTime": "2022-12-16T17:03:46.666Z",
+                "cloudConnectors": [
+                    {
+                        "id": "c8ir0rsc0001794j8o60",
+                        "signalStrength": 38,
+                        "rssi": -87
+                    }
+                ],
+                "transmissionMode": "LOW_POWER_STANDARD_MODE"
+            }
+        },
+        "timestamp": "2100-12-12T01:00:01.123Z"
+    },
+    "labels": {
+        "name": "Master Bed Temp And Humid"
+    },
+    "metadata": {
+        "deviceId": "btov79dpna500081h9o0",
+        "projectId": "cbatk6b9ub8ophfojf9g",
+        "deviceType": "humidity",
+        "productNumber": "102096"
+    }
+}

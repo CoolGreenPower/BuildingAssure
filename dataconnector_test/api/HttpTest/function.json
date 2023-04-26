@@ -1,0 +1,139 @@
+{
+  "bindings": [
+    {
+      "authLevel": "anonymous",
+      "type": "httpTrigger",
+      "direction": "in",
+      "name": "req",
+      "methods": [
+        "get",
+        "post"
+      ]
+    },
+    {
+      "type": "http",
+      "direction": "out",
+      "name": "res"
+    },
+    {
+      "name": "ChandlerDevCenterFrontDoor",
+      "type": "sql",
+      "direction": "out",
+      "commandText": "dbo.DT_ChandlerDevCenter_FrontDoor",
+      "connectionStringSetting": "CGPdbConnectionString"
+    },
+    {
+      "name": "FrontDoorLatestRow",
+      "type": "sql",
+      "direction": "in",
+      "commandText": "select TOP (1)* from dbo.DT_ChandlerDevCenter_FrontDoor",
+      "commandType": "Text",
+      "connectionStringSetting": "CGPdbConnectionString"
+    },
+    {
+      "name": "ChandlerDevCenterMasterBedTempAndHumid",
+      "type": "sql",
+      "direction": "out",
+      "commandText": "dbo.DT_ChandlerDevCenter_MasterBedTempAndHumid",
+      "connectionStringSetting": "CGPdbConnectionString"
+    },
+    {
+      "name": "MasterBedTempAndHumidLatestRow",
+      "type": "sql",
+      "direction": "in",
+      "commandText": "select TOP (1)* from dbo.DT_ChandlerDevCenter_MasterBedTempAndHumid",
+      "commandType": "Text",
+      "connectionStringSetting": "CGPdbConnectionString"
+    },
+    {
+      "name": "ChandlerDevCenterOfficeTemp",
+      "type": "sql",
+      "direction": "out",
+      "commandText": "dbo.DT_ChandlerDevCenter_OfficeTemp",
+      "connectionStringSetting": "CGPdbConnectionString"
+    },
+    {
+      "name": "OfficeTempLatestRow",
+      "type": "sql",
+      "direction": "in",
+      "commandText": "select TOP (1)* from dbo.DT_ChandlerDevCenter_OfficeTemp",
+      "commandType": "Text",
+      "connectionStringSetting": "CGPdbConnectionString"
+    },
+    {
+      "name": "ChandlerDevCenterTouchSensor",
+      "type": "sql",
+      "direction": "out",
+      "commandText": "dbo.DT_ChandlerDevCenter_TouchSensor",
+      "connectionStringSetting": "CGPdbConnectionString"
+    },
+    {
+      "name": "TouchSensorLatestRow",
+      "type": "sql",
+      "direction": "in",
+      "commandText": "select TOP (1)* from dbo.DT_ChandlerDevCenter_TouchSensor",
+      "commandType": "Text",
+      "connectionStringSetting": "CGPdbConnectionString"
+    },
+    {
+      "name": "ChandlerDevCenterWaterSensor",
+      "type": "sql",
+      "direction": "out",
+      "commandText": "dbo.DT_ChandlerDevCenter_WaterSensor",
+      "connectionStringSetting": "CGPdbConnectionString"
+    },
+    {
+      "name": "WaterSensorLatestRow",
+      "type": "sql",
+      "direction": "in",
+      "commandText": "select TOP (1)* from dbo.DT_ChandlerDevCenter_WaterSensor",
+      "commandType": "Text",
+      "connectionStringSetting": "CGPdbConnectionString"
+    },
+    {
+      "name": "ChandlerDevCenterMasterBedCO2Sensor",
+      "type": "sql",
+      "direction": "out",
+      "commandText": "dbo.DT_ChandlerDevCenter_MasterBedCO2Sensor",
+      "connectionStringSetting": "CGPdbConnectionString"
+    },
+    {
+      "name": "MasterBedCO2SensorLatestRow",
+      "type": "sql",
+      "direction": "in",
+      "commandText": "select TOP (1)* from dbo.DT_ChandlerDevCenter_MasterBedCO2Sensor",
+      "commandType": "Text",
+      "connectionStringSetting": "CGPdbConnectionString"
+    },
+    {
+      "name": "ChandlerDevCenterMasterBedMotionDetector",
+      "type": "sql",
+      "direction": "out",
+      "commandText": "dbo.DT_ChandlerDevCenter_MasterBedMotionDetector",
+      "connectionStringSetting": "CGPdbConnectionString"
+    },
+    {
+      "name": "MasterBedMotionDetectorLatestRow",
+      "type": "sql",
+      "direction": "in",
+      "commandText": "select TOP (1)* from dbo.DT_ChandlerDevCenter_MasterBedMotionDetector",
+      "commandType": "Text",
+      "connectionStringSetting": "CGPdbConnectionString"
+    },
+    {
+      "name": "ChandlerDevCenterOfficeMotionDetector",
+      "type": "sql",
+      "direction": "out",
+      "commandText": "dbo.DT_ChandlerDevCenter_OfficeMotionDetector",
+      "connectionStringSetting": "CGPdbConnectionString"
+    },
+    {
+      "name": "OfficeMotionDetectorLatestRow",
+      "type": "sql",
+      "direction": "in",
+      "commandText": "select TOP (1)* from dbo.DT_ChandlerDevCenter_OfficeMotionDetector",
+      "commandType": "Text",
+      "connectionStringSetting": "CGPdbConnectionString"
+    }
+  ]
+}

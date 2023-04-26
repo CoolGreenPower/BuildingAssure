@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "tedious": "^15.1.0",
+    "websocket": "^1.0.34"
+  }
+}
